@@ -49,3 +49,28 @@ if (totalfaktor == 2) {
 } else {
   console / log("bukan bilangan prima");
 }
+
+//==================================================================
+//==================================================================
+function cekBilanganPrima(number) {
+  //proses
+  let totalFaktor = 0;
+  for (let i = 1; i <= number; i++) {
+    if (number % i == 0) {
+      totalFaktor = totalFaktor + 1;
+    }
+  }
+
+  //output
+  if (totalFaktor == 2) {
+    return "bilangan prima";
+  } else {
+    return "bukan bilangan prima";
+  }
+}
+
+console.log(cekBilanganPrima(7)); // prima
+console.log(cekBilanganPrima(10)); // bukan
+console.log(cekBilanganPrima(11)); // prima
+console.log(cekBilanganPrima(12)); // bukan
+console.log(cekBilanganPrima(15)); // bukan
